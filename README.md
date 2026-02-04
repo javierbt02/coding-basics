@@ -1,2 +1,7 @@
-# coding-basics
-A series of basic programs for me to practice the fundamentals and start leveling up.
+# Coding Basics
+
+A series of coding exercises in Python and JavaScript for reinforcing the fundamentals.
+
+## Content
+
+1. Temperature Converter.

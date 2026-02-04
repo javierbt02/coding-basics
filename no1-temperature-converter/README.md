@@ -1,3 +1,5 @@
+# Temperature Converter
+
 Console program for converting temperature scales, more specifically Farenheith to Celcius and the other way round.
 
 1. Asks the user the scale they will convert to or if they want to exit the program. 
@@ -5,4 +7,4 @@ Console program for converting temperature scales, more specifically Farenheith 
 3. Show the result.
 
 ```bash
-python convertor.py
+python converter.py
