@@ -5,4 +5,4 @@ Console program for converting temperature scales, more specifically Farenheith 
 3. Show the result.
 
 ```bash
-python python.py
+python convertor.py
