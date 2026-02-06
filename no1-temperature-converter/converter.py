@@ -2,20 +2,30 @@ print("Welcome to the temperature converter.")
 
 while True :
 
-    scale = input("Please, write down what temperature scale you want to convert to (c for celcius/f for farenheith/x to exit): \n")
+    scale = input("Please, write down what temperature scale you want to convert to (c for celsius/f for fahrenheit/x to exit): \n")
 
     if len(scale) != 1 or scale.lower() not in ["c", "f", "x"]:
         print ("Please try again.")
         
     elif scale.lower() == "c": 
-        farenheith = input("Now write the temperature you want to convert in Farenheith degrees: \n")
-        result_ftoc = (int(farenheith) - 32)*(5/9)
-        print(f"The temperature you inserted in Farenheith degrees: {farenheith}. \nConvertion to Celcius degrees: {result_ftoc}.")
+        while True :
+            fahrenheit = input("Now write the temperature you want to convert in Fahrenheit degrees: \n")
+            if fahrenheit.isalpha():
+                print("Please try again.")
+            else: 
+                result_ftoc = (float(fahrenheit) - 32)*(5/9)
+                print(f"The temperature you inserted in Fahrenheit degrees: {fahrenheit}. \nConvertion to Celsius degrees: {result_ftoc}.")
+                break
 
     elif scale.lower() == "f": 
-        celcius = input("Now write the temperature you want to convert in Celcius degrees: \n")
-        result_ctof = (int(celcius) * 9/5)+32
-        print(f"The temperature you inserted in Celcius degrees: {celcius}. \nConvertion to Farenheith degrees: {result_ctof}.")
+        while True:
+            celsius = input("Now write the temperature you want to convert in Celsius degrees: \n")
+            if celsius.isalpha():
+                print("Please try again.")
+            else: 
+                result_ctof = (float(celsius) * 9/5)+32
+                print(f"The temperature you inserted in Celsius degrees: {celsius}. \nConvertion to Fahrenheit degrees: {result_ctof}.")
+                break
 
     elif scale.lower() == "x":
         print ("Thank you for using this program.")
